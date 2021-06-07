@@ -46,6 +46,7 @@ int main()
 		fbin.read((char*)&d, sizeof(char));
 		cout << d;
 	}
+
 	cout << endl;
 	fbin.close();
 
