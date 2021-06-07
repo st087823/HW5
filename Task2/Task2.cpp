@@ -14,7 +14,7 @@ int main()
 
 	if (!fbin)
 	{
-		cout << "не найден файл! " << endl;
+		cout << "no files " << endl;
 	}
 	fbin.write(a, sizeof(a));
 	fbin.close();
@@ -29,7 +29,7 @@ int main()
 	while (!fbin.eof())
 	{
 		fbin.read((char*)&d, sizeof(char));
-		cout << "считывай ";
+		cout << "read ";
 		cout << d << endl;
 		if (d == 'A' || d == 'E' || d == 'I' || d == 'O' || d == 'Y' || d == 'U' || d == 'a' || d == 'e' || d == 'i' || d == 'o' || d == 'u' || d == 'y')
 		{
